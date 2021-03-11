@@ -12,6 +12,8 @@ namespace TypingGameKit.AsteroidTyping
         [SerializeField] private TextCollection _texts = null;
 
         [SerializeField] private Asteroid _asteroidPrefab = null;
+   
+
         [SerializeField] private float _spawnRadius = 1f;
         [SerializeField] private float _asteroidsPerMinute = 20;
         [SerializeField] private float _asteroidVelocity = 0.1f;
