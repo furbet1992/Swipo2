@@ -6,7 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Typing Game Kit/Scenes/Games/Asteroid Typing 2D/Asteroid Typing
-      2D.unity
+    path: Assets/Scenes/Asteroid Typing 2D.unity
     guid: 03efc253a77e6854eaba5dc0e6a8f052
   m_configObjects: {}
