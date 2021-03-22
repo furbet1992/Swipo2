@@ -186,6 +186,7 @@ namespace TypingGameKit
             OnSequenceCompleted();
             UnregisterSequence(sequence);
             _targetedSequences.Remove(sequence);
+            Debug.Log("Destroy"); 
         }
 
         private static bool SendInputToSequence(string input, InputSequence sequence)
