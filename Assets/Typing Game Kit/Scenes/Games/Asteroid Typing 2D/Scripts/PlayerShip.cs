@@ -48,7 +48,8 @@ namespace TypingGameKit.AsteroidTyping
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            FindObjectOfType<AsteroidGameManager>().GameOver();
+            FindObjectOfType<AsteroidGameManager>().GameOver();   
+            
         }
 
         private void DisplayLaser(Vector3 pos, Vector3 targetPos)

@@ -26,7 +26,7 @@ namespace TypingGameKit
         [SerializeField] private Color _completedColor = Color.grey;
 
         [Tooltip("Color to use when showing the sequence's remaining text.")]
-        [SerializeField] private Color _remainingColor = Color.white;
+        [SerializeField] private Color _remainingColor = Color.red;
 
         [Tooltip("This setting determines completed portion of the sequence is displayed or not.")]
         [SerializeField] private bool _hideCompletedText = false;

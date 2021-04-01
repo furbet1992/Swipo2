@@ -46,11 +46,12 @@ namespace TypingGameKit
             InputSequenceManager.OnInputRejected -= OnInputRejected;
         }
 
+        //Adding int to the Score
         private void OnInputAccepted()
         {
             var input = InputSequenceManager.LatestProcessedInput;
             GetInputStats(input).RecordAcceptedInput();
-            AcceptedInputs += 1;
+            AcceptedInputs += 2;
         }
 
         private void OnInputRejected()

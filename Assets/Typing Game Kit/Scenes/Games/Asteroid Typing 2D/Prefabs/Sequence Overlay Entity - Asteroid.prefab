@@ -223,7 +223,7 @@ MonoBehaviour:
   _sequence: {fileID: 114248619029134308}
   _text: {fileID: 1890042023054080959}
   _completedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
-  _remainingColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+  _remainingColor: {r: 0.64705884, g: 0.34389463, b: 0.34389463, a: 1}
   _hideCompletedText: 1
   _positionIndicator: 0
   _spaceReplacement: 183
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=#DDDDDDFF>E</color><color=#DDDDDDFF>xample\_\u200BText!</color>"
+  m_text: "<color=#A55858FF>E</color><color=#A55858FF>xample\_\u200BText!</color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1eb268ffae869d47b175c701ed5c4ba, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 90cf19276d6be8e4d9fd3042ef3fec17, type: 2}
