@@ -19,6 +19,8 @@ namespace TypingGameKit.AsteroidTyping
 
         private float lastShotTime;
 
+        public Animator animator;
+
         /// <summary>
         /// Blows up the ship.
         /// </summary>
@@ -35,8 +37,8 @@ namespace TypingGameKit.AsteroidTyping
         {
             lastShotTime = Time.time;
             Vector3 target = asteroid.transform.position;
-
-            LookAtPosition(target);
+            animator.SetFloat("Slashing", 1); 
+            //LookAtPosition(target);
             DisplayLaser(transform.position, target);
             audioSource.PlayOneShot(_laserSound);
         }
@@ -48,8 +50,8 @@ namespace TypingGameKit.AsteroidTyping
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            FindObjectOfType<AsteroidGameManager>().GameOver();   
-            
+            FindObjectOfType<AsteroidGameManager>().GameOver();
+
         }
 
         private void DisplayLaser(Vector3 pos, Vector3 targetPos)
@@ -63,13 +65,13 @@ namespace TypingGameKit.AsteroidTyping
         {
             if (_laserRenderer.enabled && Time.time - lastShotTime > _laserDuration)
             {
-                _laserRenderer.enabled = false;
+                _laserRenderer.enabled = true;
             }
-        }
 
-        private void LookAtPosition(Vector3 target)
-        {
-            transform.up = target - transform.position;
+            //private void LookAtPosition(Vector3 target)
+            //{
+            //    transform.up = target - transform.position;
+            //}
         }
     }
 }

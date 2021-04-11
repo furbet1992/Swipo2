@@ -73,15 +73,15 @@ namespace TypingGameKit.AsteroidTyping
 
         private Vector3 RandomInitialAsteroidPosition()
         {
-            //float value = Random.Range(0, Mathf.PI * 2);
-            //return transform.position + new Vector3(Mathf.Cos(value), Mathf.Sin(value)) * _spawnRadius;
+            float value = Random.Range(0, Mathf.PI * 2);
+            return transform.position + new Vector3(Mathf.Cos(value), Mathf.Sin(value)) * _spawnRadius;
 
-                // Get a random position on the top of the viewport
-                Vector3 topPosition = Camera.main.ViewportToWorldPoint(new Vector2(Random.Range(0f, 1f), 1));
+            //Get a random position on the top of the viewport
+            //Vector3 topPosition = Camera.main.ViewportToWorldPoint(new Vector2(Random.Range(0f, 1f), 1));
 
-                // Make sure its z height is at the same height as the player.
-                return new Vector3(topPosition.x, topPosition.y, 0);
-            
+            //// Make sure its z height is at the same height as the player.
+            //return new Vector3(topPosition.x, topPosition.y, 0);
+
         }
     }
 }

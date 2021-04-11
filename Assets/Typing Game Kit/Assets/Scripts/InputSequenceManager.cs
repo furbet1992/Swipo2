@@ -9,6 +9,7 @@ namespace TypingGameKit
     /// </summary>
     public static class InputSequenceManager
     {
+
         private static int _lastUpdateFrame;
         private static bool _useMultiTargeting = false;
 
